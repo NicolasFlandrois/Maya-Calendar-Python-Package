@@ -1,6 +1,6 @@
 [project]
 name = "MayaCalendar"
-version = "1.2.1"
+version = "1.2.2"
 authors = [{name="Nicolas Flandrois", email="contacts@flandrois.com"},]
 maintainers = [{name="Nicolas Flandrois", email="nicolas.dev@flandrois.com"},]
 description = "Maya Calendar convertor (Long Count, Tzolkin, Haab)."
