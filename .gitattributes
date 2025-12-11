@@ -182,3 +182,4 @@
 *.exe     binary
 *.csv     text
 *.msg     binary
+*.whl     binary

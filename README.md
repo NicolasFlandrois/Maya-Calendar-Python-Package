@@ -1,4 +1,4 @@
-# Mayan Date Converter
+# Maya Date Converter
 
 A Python library for converting between Gregorian and Mayan calendar systems. Supports all three traditional Mayan calendars: Long Count, Tzolkin, and Haab'.
 
@@ -59,19 +59,19 @@ The Maya civilization developed multiple sophisticated calendar systems that wor
 ### Using pip
 
 ```bash
-pip install maya
+pip install mayacalendar
 ```
 
 ### Using uv (recommended)
 
 ```bash
-uv pip install maya-converter
+uv pip install mayacalendar
 ```
 
 Or add to your project:
 
 ```bash
-uv add maya-converter
+uv add mayacalendar
 ```
 
 ## 🛠️ Usage Examples
@@ -79,7 +79,7 @@ uv add maya-converter
 ### Basic Conversion
 
 ```python
-from maya import MayanDateConverter
+from mayacalendar import MayanDateConverter
 from datetime import datetime
 
 # Initialize converter (defaults to GMT correlation)
@@ -117,7 +117,7 @@ print(f"Spinden: {spinden_result}")  # Will be 2 days earlier
 ### Getting Current Mayan Dates
 
 ```python
-from maya import MayanDateConverter
+from mayacalendar import MayanDateConverter
 
 # Current dates using class methods
 print(f"Today's Long Count: {MayanDateConverter.long_count_now()}")

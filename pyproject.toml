@@ -1,9 +1,9 @@
 [project]
-name = "Maya"
-version = "1.2.0"
+name = "Calendar-Maya"
+version = "1.2.1"
 authors = [{name="Nicolas Flandrois", email="contacts@flandrois.com"},]
 maintainers = [{name="Nicolas Flandrois", email="nicolas.dev@flandrois.com"},]
-description = "Mayan calendar convertor (Long Count, Tzolkin, Haab)."
+description = "Maya Calendar convertor (Long Count, Tzolkin, Haab)."
 readme = "README.md"
 license = { file = "LICENSE" }
 requires-python = ">=3.14"

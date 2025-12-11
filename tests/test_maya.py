@@ -9,7 +9,7 @@
 # If not, see <https://www.gnu.org/licenses/>.
 import unittest
 from datetime import datetime
-from maya import MayanDateConverter
+from mayacalendar import MayanDateConverter
 
 __author__ = "Nicolas Flandrois"
 __credits__ = "Nicolas Flandrois"
@@ -19,7 +19,7 @@ __maintainer__ = ["Nicolas Flandrois"]
 __email__ = ["contacts@flandrois.com"]
 __compatible_python_version__ = "≥ 3.12"
 __status__ = "Production"
-__version__ = "1.1.0"
+__version__ = "1.2.1"
 __last_modified_on__ = "2025-12-11"
 
 
