@@ -59,19 +59,19 @@ The Maya civilization developed multiple sophisticated calendar systems that wor
 ### Using pip
 
 ```bash
-pip install mayacalendar
+pip install MayaCalendar
 ```
 
 ### Using uv (recommended)
 
 ```bash
-uv pip install mayacalendar
+uv pip install MayaCalendar
 ```
 
 Or add to your project:
 
 ```bash
-uv add mayacalendar
+uv add MayaCalendar
 ```
 
 ## 🛠️ Usage Examples
