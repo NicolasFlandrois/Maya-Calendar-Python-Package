@@ -36,13 +36,14 @@ def _get_class_module(self):
 
 
 class MayaDate:
-    """A Python library to manage MayaDate, and for converting between Gregorian (datetime object) and Mayan calendar systems.
+    """A Python library to manage Maya (Mesoamerican) calendar systems as a MayaDate object,
+    and for converting between Gregorian (datetime object) and Maya date.
     Supports all three traditional Mayan calendars: Long Count, Tzolkin, and Haab'.
 
     # Overview
 
     The Maya civilization developed multiple sophisticated calendar systems that worked together.
-    This library provides accurate conversions between the Gregorian calendar and these three Mayan systems:
+    This library provides accurate conversions between the Gregorian (standard) calendar and these three Mayan systems:
 
     ## The Three Mayan Calendars:
 

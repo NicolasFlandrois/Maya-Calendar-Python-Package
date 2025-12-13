@@ -1,12 +1,13 @@
 # Maya Date Converter
 
-A Python library for converting between Gregorian and Mayan calendar systems. Supports all three traditional Mayan calendars: Long Count, Tzolkin, and Haab'.
+A Python library to manage Maya (Mesoamerican) calendar systems as a MayaDate object, and for converting between Gregorian (datetime object) and Maya date.
+Supports all three traditional Maya calendars: Long Count, Tzolkin, and Haab'.
 
 ![Python 3](https://img.shields.io/badge/Python-%3E%3D3.x-blue.svg) ![GitHub](https://img.shields.io/github/license/NicolasFlandrois/Maya-Calendar-Python-Package) ![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/NicolasFlandrois/Maya-Calendar-Python-Package?style=flat)
 
 ## 📜 Overview
 
-The Maya civilization developed multiple sophisticated calendar systems that worked together. This library provides accurate conversions between the Gregorian calendar and these three Mayan systems:
+The Maya civilization developed multiple sophisticated calendar systems that worked together. This library provides accurate conversions between the Gregorian (standard) calendar and these three Mayan systems:
 
 ### The Three Mayan Calendars
 
