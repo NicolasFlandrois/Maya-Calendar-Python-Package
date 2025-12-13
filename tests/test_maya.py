@@ -9,7 +9,8 @@
 # If not, see <https://www.gnu.org/licenses/>.
 import unittest
 from datetime import datetime
-from mayacalendar import MayanDateConverter
+
+from mayacalendar import MayaDate
 
 __author__ = "Nicolas Flandrois"
 __credits__ = "Nicolas Flandrois"
@@ -20,14 +21,14 @@ __email__ = ["contacts@flandrois.com"]
 __compatible_python_version__ = "≥ 3.12"
 __status__ = "Production"
 __version__ = "1.2.2"
-__last_modified_on__ = "2025-12-11"
+__last_modified_on__ = "2025-12-13"
 
 
-class TestMayanDateConverter(unittest.TestCase):
+class TestMayaDate(unittest.TestCase):
 
     def setUp(self):
-        self.gmt_converter = MayanDateConverter('GMT')
-        self.spinden_converter = MayanDateConverter('Spinden')
+        self.gmt_converter = MayaDate(correlation='GMT')
+        self.spinden_converter = MayaDate(correlation='Spinden')
 
     def test_correlation_difference(self):
         """Test that GMT and Spinden correlations produce different results"""
@@ -105,8 +106,8 @@ class TestMayanDateConverter(unittest.TestCase):
 
     def test_tzolkin_now_classmethod(self):
         """Test tzolkin_now classmethod with different correlations"""
-        gmt_result = MayanDateConverter.tzolkin_now('GMT')
-        spinden_result = MayanDateConverter.tzolkin_now('Spinden')
+        gmt_result = MayaDate.tzolkin_now('GMT')
+        spinden_result = MayaDate.tzolkin_now('Spinden')
 
         # Both should be valid Tzolkin formats
         gmt_parts = gmt_result.split(' ')
@@ -123,7 +124,7 @@ class TestMayanDateConverter(unittest.TestCase):
 
     def test_haab_now_classmethod(self):
         """Test haab_now classmethod"""
-        result = MayanDateConverter.haab_now()
+        result = MayaDate.haab_now()
         parts = result.split(' ')
 
         self.assertEqual(len(parts), 2)
@@ -136,8 +137,8 @@ class TestMayanDateConverter(unittest.TestCase):
 
     def test_long_count_now_classmethod(self):
         """Test long_count_now classmethod with different correlations"""
-        gmt_result = MayanDateConverter.long_count_now('GMT')
-        spinden_result = MayanDateConverter.long_count_now('Spinden')
+        gmt_result = MayaDate.long_count_now('GMT')
+        spinden_result = MayaDate.long_count_now('Spinden')
 
         # Both should be valid Long Count formats
         gmt_parts = list(map(int, gmt_result.split('.')))
@@ -152,7 +153,7 @@ class TestMayanDateConverter(unittest.TestCase):
 
     def test_invalid_correlation_defaults_to_gmt(self):
         """Test that invalid correlation defaults to GMT"""
-        converter = MayanDateConverter('INVALID')
+        converter = MayaDate(correlation='INVALID')
         # Should use GMT reference (584283)
         self.assertEqual(converter.julian_ref, 584283)
 
